@@ -165,7 +165,6 @@
 //News
 .mNews {
     position: relative;
-    overflow: hidden;
     padding: 70px 0 100px;
 
     .container {
@@ -366,7 +365,6 @@
 
 // health info
 .mHealth {
-    overflow: hidden;
     position: relative;
     box-sizing: border-box;
     margin: 95px 0 74px;
@@ -1023,7 +1021,7 @@
 
 // main 상단서비스
 #easyService {
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     width: 100%;
     background-color: #0cb5f4;
@@ -1043,7 +1041,7 @@
     .easyServiceWrap {
         display: flex;
         position: relative;
-        width: 1280px;
+        max-width: 1280px;
         margin: 0 auto;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1076,13 +1074,6 @@
         color: #fff;
         font-size: 18px;
         font-weight: 300;
-    }
-}
-@media (max-width: 1280px) {
-    #easyService,
-    #easyService .easyServiceWrap {
-        /* width: 1280px; */
-        width: 1263px;
     }
 }
 
@@ -1207,7 +1198,7 @@
     position: relative;
     z-index: 1000;
     // width: 47%;
-    flex-grow: 1;
+    width: 42%;
     height: 780px;
     box-sizing: border-box;
     background: url(../../images/main/bg-easy3.png) 0 100% no-repeat;
@@ -1503,7 +1494,7 @@
         background: #08b5f4 url(../../images/common/ico_arrL_white.png) no-repeat center bottom 25px;
         font-size: 0;
         transition: 0.15s;
-        z-index: 9;
+        z-index: 1000;
 
         &.on {
             display: none;
@@ -1631,142 +1622,10 @@
         }
     }
 }
-@media all and (max-width: 1600px) {
-    #easyService {
-        left: 0;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    #typeTeamIntro .sec_searchBox .topSrch_list > a {
-        width: calc(33.3% - 80px);
-    }
-}
-
-@media all and (max-width: 1500px) {
-    #yangsan .easy_search {
-        padding-right: 0;
-    }
-    #yangsan .easy_ct {
-        padding-left: 40px;
-    }
-}
-
-@media all and (max-width: 1480px) {
-    #yangsan .easy_search {
-        width: calc(100% - 745px);
-    }
-}
-
-@media all and (max-width: 1413px) {
-    .headerBnr .bnrWrap {
-        width: 1188px;
-        padding: 0 60px 0 0;
-    }
-    .headerBnr .todayLimit {
-        right: 60px;
-    }
-}
-
-@media all and (max-width: 1400px) {
-    #easyService {
-        width: 100%;
-        background-position: left -270px top 0px !important;
-    }
-    #easyService .easyServiceWrap {
-        width: 100%;
-        margin: 0;
-    }
-    .easy_appointment {
-        width: 410px;
-    }
-    .easy_search {
-        width: calc(100% - 500px);
-    }
-    .easy_ct {
-        width: calc(100% - 420px);
-        margin-right: 10px;
-        padding-left: 0;
-    }
-    .easy_ct .icoBnr {
-        margin: 0 100px;
-    }
-}
-
-@media all and (max-width: 1337px) {
-    /*미디어쿼리 rnb 사이즈 변경점*/
-    #contents #rnb_nav {
-        width: calc(100% - 970px);
-        min-width: 260px;
-        max-width: 300px;
-    }
-}
-
-@media all and (max-width: 1280px) {
-    body {
-        overflow: auto;
-    }
-
-    #header,
-    #footer {
-        width: 1263px;
-        box-sizing: border-box;
-    }
-    #header header,
-    #footer footer {
-        max-width: none;
-        margin: auto;
-    }
-    #container {
-        width: 1263px;
-    }
-
-    #snb_nav {
-        min-width: 1263px;
-    }
-    #snb_nav .snbWrap {
-        max-width: none;
-    }
-    #snb_nav .snb_util {
-        right: 0;
-    }
-
-    #pnuh_network > section {
-        left: 0;
-        margin-left: 56px;
-        transform: translate(0, -50%);
-    }
-    #pnuh_network.typeNetwork04 > section {
-        left: 0;
-        top: 0;
-        width: 1263px;
-        margin-left: 0;
-        transform: translateX(0);
-    }
-    #pnuh_network.typeNetwork04 > section .network01 {
-        width: 235px;
-    }
-    #pnuh_network.typeNetwork04 > section .network04 {
-        width: 305px;
-    }
-
+@media screen and (max-width: 1280px) {
     #easyService,
-    #easyService .easyServiceWrap {
-        /*width:1280px*/
-        width: 1263px;
-    }
-    .easy_ct .icoBnr {
-        padding-left: 30px;
-    }
-    #yangsan .easy_ct .imgBnr .list_control {
-        margin-left: 0;
-    }
-
-    #easyService .btn_sideQuickService {
-        width: 30px;
-    }
-    #easyService .btn_sideQuickService > span {
-        width: 30px;
-        padding: 30px 5px 60px;
+    .mNews,
+    .mHealth {
+        overflow: hidden;
     }
 }
