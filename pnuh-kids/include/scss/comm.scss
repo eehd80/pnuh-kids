@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @import "reset", "variables", "mixins";
 
+@font-face {
+    font-family: "Jalnan";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 // layout
 body {
     overflow-x: hidden;
@@ -54,7 +61,7 @@ body {
                 border-radius: 23px;
                 font-size: 25px;
                 font-weight: 700;
-                line-height: 46px;
+                line-height: 48px;
                 color: #888;
                 cursor: pointer;
                 color: #888;

@@ -274,6 +274,13 @@ legend {
   content: "";
 }
 
+@font-face {
+  font-family: "Jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -337,7 +344,7 @@ body.typeEasy #header {
   border-radius: 23px;
   font-size: 25px;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 48px;
   color: #888;
   cursor: pointer;
   color: #888;
@@ -2463,7 +2470,7 @@ footer .copyright {
   display: block;
   width: 28px;
   height: 19px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   background: url(../../images/common/comm.png) 0 -100px no-repeat;
 }
 
@@ -3800,6 +3807,9 @@ footer .copyright {
   .mNews,
   .mHealth {
     overflow: hidden;
+  }
+  .easy_ct {
+    padding-left: 40px;
   }
 }
 

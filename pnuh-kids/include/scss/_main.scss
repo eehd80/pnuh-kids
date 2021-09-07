@@ -470,7 +470,7 @@
                     display: block;
                     width: 28px;
                     height: 19px;
-                    margin-bottom: 13px;
+                    margin-bottom: 10px;
                     background: url(../../images/common/comm.png) 0 -100px no-repeat;
                 }
             }
@@ -1627,5 +1627,8 @@
     .mNews,
     .mHealth {
         overflow: hidden;
+    }
+    .easy_ct {
+        padding-left: 40px;
     }
 }
