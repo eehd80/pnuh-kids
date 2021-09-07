@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>부산대학교병원</title>
+        <meta name="title" content="부산대학교병원" />
+        <meta name="Description" content="051-240-7000, 부산광역시 서구 구덕로 179, 생명 존중의 정신 부산대학교병원" />
+        <meta
+            name="Keywords"
+            content="부산대학교병원, 부산대학병원, 부산대병원, Pusan National University Hospital, 온라인예약, 간편예약, 진료과소개, 의료진소개, 오시는길"
+        />
+        <meta name="robots" content="index,follow" />
+        <meta property="og:site_name" content="부산대학교병원" />
+        <meta property="og:title" content="부산대학교병원" />
+        <meta property="og:description" content="051-240-7000, 부산광역시 서구 구덕로 179, 생명 존중의 정신 부산대학교병원" />
+        <meta property="og:image" content="./images/common/pnuhicon.ico" />
+        <meta property="og:url" content="https://kids.pnuyh.or.kr/" />
+
+        <link rel="shortcut icon" href="./images/common/pnuhicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="./include/vender/slick/slick.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./include/vender/mCustomScrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="./include/css/comm.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./include/vender/slick/slick.min.js"></script>
+        <script src="http://ulm.bvs.co.kr/pnuh/pnuh/include/js/jquery.easing.1.3.js"></script>
+        <script src="./include/vender/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="./include/js/comm.js"></script>
+        <!--[if lt IE 9]>
+            <script src="./include/vender/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <!--
+body 클래스 규칙 :
+*상단 간편예약이 있을 경우(메인페이지 경우) typeEasy 클래스 추가 / 없을경우 typeEasy 클래스 삭제
+*상단 띠배너가 있을 경우 typeHeadBnr 클래스 추가 / 없을경우 typeHeadBnr 클래스 삭제
+-->
+    <body>
+        <div id="skip_menu">
+            <a href="#contents">컨텐츠 바로가기</a>
+            <a href="#header">주메뉴 바로가기</a>
+            <a href="#footer">푸터 바로가기</a>
+        </div>
+
+        <div id="header">
+            <header>
+                <h1 class="logo">
+                    <a href="index.html">부산대학교 어린이병원</a>
+                </h1>
+
+                <nav>
+                    <ul id="gnb">
+                        <li class="child">
+                            <a href="#none">병원안내</a>
+                            <div class="gnbTit">
+                                <h2>병원안내</h2>
+                                <p>부산대학교어린이병원의 각종 <br />소식들을 자세히 소개합니다.</p>
+                            </div>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">병원소개</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원장인사말</a></li>
+                                        <li><a href="#none">역대병원장</a></li>
+                                        <li><a href="#none">연혁</a></li>
+                                        <li><a href="#none">어린이병원H.I</a></li>
+                                        <li><a href="#none">캐릭터</a></li>
+                                        <li><a href="#none">현황및통계</a></li>
+                                        <li><a href="#none">홍보동영상/갤러리</a></li>
+                                        <li><a href="#none">어린이병원 10년사</a></li>
+                                    </ul>
+                                </li>
+                                <li class="child">
+                                    <a href="#none">종합안내도</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">오시는길</a></li>
+                                        <li><a href="#none">병원안내도</a></li>
+                                        <li><a href="#none">주차장이용안내</a></li>
+                                        <li><a href="#none">편의시설안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">전화번호안내</a></li>
+                                <li class="child">
+                                    <a href="#none">병원소식</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원뉴스</a></li>
+                                        <li><a href="#none">언론보도</a></li>
+                                        <li><a href="#none">TV보도</a></li>
+                                    </ul>
+                                </li>
+                                <li class="child">
+                                    <a href="#none">웹진</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원보</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">관련사이트</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">진료안내</a>
+                            <div class="gnbTit">
+                                <h2>진료안내</h2>
+                                <p>진료 및 입퇴원 진료과 소개 등을 <br />상세히 안내해 드립니다.</p>
+                            </div>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">진료안내</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">외래이용접수안내</a></li>
+                                        <li><a href="#none">진료비수남/환불안내</a></li>
+                                        <li><a href="#none">입퇴원안내</a></li>
+                                        <li><a href="#none">진료예약안내</a></li>
+                                        <li><a href="#none">병문안 안내</a></li>
+                                        <li><a href="#none">예방접종</a></li>
+                                        <li><a href="#none">검사실안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">응급진료안내</a></li>
+                                <li><a href="#none">비급여진료안내</a></li>
+                                <li><a href="#none">센터/클리닉</a></li>
+                                <li><a href="#none">과별전문진료</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">예약/조회/발급</a>
+                            <div class="gnbTit">
+                                <h2>예약/조회/발급</h2>
+                                <p>예약부터 조회 및 검사결과 등을 <br />한번에 확인하실 수 있습니다.</p>
+                            </div>
+                            <ul class="menuM">
+                                <li><a href="#none">진료예약</a></li>
+                                <li class="child">
+                                    <a href="#none">예약조회</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">예약일정조회</a></li>
+                                        <li><a href="#none">이력조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">진료시간표</a></li>
+                                <li class="child">
+                                    <a href="#none">의무기록발급신청</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">인터넷신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">증명서 발급/신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">건강정보</a>
+                            <div class="gnbTit">
+                                <h2>건강정보</h2>
+                                <p>
+                                    각종 질병 및 투약정보 등 <br />
+                                    다양한 건강정보들을 만나보세요.
+                                </p>
+                            </div>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">종합질병정보</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">어린이건강정보</a></li>
+                                        <li><a href="#none">어린이건강FAQ</a></li>
+                                        <li><a href="#none">어린이검사정보</a></li>
+                                        <li><a href="#none">어린이약품정보</a></li>
+                                        <li><a href="#none">어린이영양정보</a></li>
+                                        <li><a href="#none">어린이건강칼럼</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">의료장비정보</a></li>
+                                <li><a href="#none">건강교실안내</a></li>
+                                <li><a href="#none">건강상담</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">어린이병원학교</a>
+                            <div class="gnbTit">
+                                <h2>어린이병원학교</h2>
+                                <p>어린이는 우리의 꿈이며 미래입니다.</p>
+                            </div>
+                            <ul class="menuM">
+                                <li><a href="#none">어린이병원학교소개</a></li>
+                                <li><a href="#none">자원봉사자</a></li>
+                                <li><a href="#none">연혁</a></li>
+                                <li><a href="#none">교사소개</a></li>
+                                <li><a href="#none">학사/행정/교육일정</a></li>
+                                <li><a href="#none">수업시간표</a></li>
+                                <li><a href="#none">포토갤러리</a></li>
+                                <li><a href="#none">낙서장</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">고객참여마당</a>
+                            <div class="gnbTit">
+                                <h2>고객참여마당</h2>
+                                <p>고객의 의견에 귀 기울이도록 항상 최선을 다하겠습니다.</p>
+                            </div>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">환자와의 약속</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원윤리강령</a></li>
+                                        <li><a href="#none">환자권리장전</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">환우회모임게시판</a></li>
+                                <li><a href="#none">친절직원추천</a></li>
+                                <li class="child">
+                                    <a href="#none">어린이병원후원회</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">인사말</a></li>
+                                        <li><a href="#none">기부하기</a></li>
+                                        <li><a href="#none">후원인예우</a></li>
+                                        <li><a href="#none">후원인명단</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="gnb_util">
+                    <div class="myInfo">
+                        <span class="btn_member"><button type="button">남궁길동님</button></span>
+                        <ul class="infoList">
+                            <li><a href="#none">마이페이지</a></li>
+                            <li><a href="#none">로그아웃</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="language">
+                        <button type="button" class="btn_langSel">KOR</button>
+                        <ul class="langList">
+                            <li>
+                                <a href="https://english.pnuh.or.kr/english/main/main.do?rbsIdx=1" target="_blank" title="새창">English</a>
+                            </li>
+                            <li>
+                                <a href="https://chinese.pnuh.or.kr/chinese/main/main.do?rbsIdx=1" target="_blank" title="새창">Chinese</a>
+                            </li>
+                            <li>
+                                <a href="https://japanese.pnuh.or.kr/japanese/main/main.do?rbsIdx=1" target="_blank" title="새창"
+                                    >Japanese</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://russian.pnuh.or.kr/russian/main/main.do?rbsIdx=1" target="_blank" title="새창">Russian</a>
+                            </li>
+                            <li>
+                                <a href="https://mongolian.pnuh.or.kr/mongolian/main/main.do?rbsIdx=1" target="_blank" title="새창"
+                                    >Nongolian</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn_topSearch">검색</button>
+                    <!-- 검색영역-->
+                    <section class="sec_topsSearch">
+                        <div class="searchBoxWrap">
+                            <fieldset class="topSrch">
+                                <legend>검색 영역</legend>
+                                <input type="text" class="inp_t" id="topSrch_srch" title="검색어 입력" placeholder="검색어를 입력하세요." />
+                                <button type="button" class="btn_srch">검색</button>
+                            </fieldset>
+                        </div>
+                    </section>
+                    <!-- //검색영역-->
+                </div>
+            </header>
+        </div>
+        <script>
+            var gnbDep1 = 1;
+            var gnbDep2 = 1;
+            var gnbDep3 = 0;
+        </script>
+        <hr />
+        <!-- 서브페이지 .contSub 추가 -->
+        <div id="container" class="contSub">
+            <!-- snb -->
+            <div id="snb_nav">
+                <div class="snbWrap">
+                    <a href="#none" class="btn_snbHome">홈</a>
+
+                    <ul id="snb">
+                        <li class="child">
+                            <a href="#none">병원안내</a>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">병원소개</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원장인사말</a></li>
+                                        <li><a href="#none">역대병원장</a></li>
+                                        <li><a href="#none">연혁</a></li>
+                                        <li><a href="#none">어린이병원H.I</a></li>
+                                        <li><a href="#none">캐릭터</a></li>
+                                        <li><a href="#none">현황및통계</a></li>
+                                        <li><a href="#none">홍보동영상/갤러리</a></li>
+                                        <li><a href="#none">어린이병원 10년사</a></li>
+                                    </ul>
+                                </li>
+                                <li class="child">
+                                    <a href="#none">종합안내도</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">오시는길</a></li>
+                                        <li><a href="#none">병원안내도</a></li>
+                                        <li><a href="#none">주차장이용안내</a></li>
+                                        <li><a href="#none">편의시설안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">전화번호안내</a></li>
+                                <li class="child">
+                                    <a href="#none">병원소식</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원뉴스</a></li>
+                                        <li><a href="#none">언론보도</a></li>
+                                        <li><a href="#none">TV보도</a></li>
+                                    </ul>
+                                </li>
+                                <li class="child">
+                                    <a href="#none">웹진</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원보</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">관련사이트</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">진료안내</a>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">진료안내</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">외래이용접수안내</a></li>
+                                        <li><a href="#none">진료비수남/환불안내</a></li>
+                                        <li><a href="#none">입퇴원안내</a></li>
+                                        <li><a href="#none">진료예약안내</a></li>
+                                        <li><a href="#none">병문안 안내</a></li>
+                                        <li><a href="#none">예방접종</a></li>
+                                        <li><a href="#none">검사실안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">응급진료안내</a></li>
+                                <li><a href="#none">비급여진료안내</a></li>
+                                <li><a href="#none">센터/클리닉</a></li>
+                                <li><a href="#none">과별전문진료</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">예약/조회/발급</a>
+                            <ul class="menuM">
+                                <li><a href="#none">진료예약</a></li>
+                                <li class="child">
+                                    <a href="#none">예약조회</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">예약일정조회</a></li>
+                                        <li><a href="#none">이력조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">진료시간표</a></li>
+                                <li class="child">
+                                    <a href="#none">의무기록발급신청</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">인터넷신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">증명서 발급/신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">건강정보</a>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">종합질병정보</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">어린이건강정보</a></li>
+                                        <li><a href="#none">어린이건강FAQ</a></li>
+                                        <li><a href="#none">어린이검사정보</a></li>
+                                        <li><a href="#none">어린이약품정보</a></li>
+                                        <li><a href="#none">어린이영양정보</a></li>
+                                        <li><a href="#none">어린이건강칼럼</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">의료장비정보</a></li>
+                                <li><a href="#none">건강교실안내</a></li>
+                                <li><a href="#none">건강상담</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">어린이병원학교</a>
+                            <ul class="menuM">
+                                <li><a href="#none">어린이병원학교소개</a></li>
+                                <li><a href="#none">자원봉사자</a></li>
+                                <li><a href="#none">연혁</a></li>
+                                <li><a href="#none">교사소개</a></li>
+                                <li><a href="#none">학사/행정/교육일정</a></li>
+                                <li><a href="#none">수업시간표</a></li>
+                                <li><a href="#none">포토갤러리</a></li>
+                                <li><a href="#none">낙서장</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">고객참여마당</a>
+                            <ul class="menuM">
+                                <li class="child">
+                                    <a href="#none">환자와의 약속</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">병원윤리강령</a></li>
+                                        <li><a href="#none">환자권리장전</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">환우회모임게시판</a></li>
+                                <li><a href="#none">친절직원추천</a></li>
+                                <li class="child">
+                                    <a href="#none">어린이병원후원회</a>
+                                    <ul class="menuS">
+                                        <li><a href="#none">인사말</a></li>
+                                        <li><a href="#none">기부하기</a></li>
+                                        <li><a href="#none">후원인예우</a></li>
+                                        <li><a href="#none">후원인명단</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="snb_util">
+                        <a href="#none" class="btn_appointmentOnline">진료예약</a>
+                        <a href="#none" class="btn_appointmentSimple">간편예약</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //snb -->
+
+            <div id="contents">
+                <!-- rnb미노출시 contentsExp클래스 추가-->
+
+                <!-- rnb -->
+
+                <div id="rnb_nav">
+                    <h2 class="rnbTit bg-rnb01">병원안내</h2>
+                    <ul id="rnb">
+                        <li class="child">
+                            <a href="#none">병원소개</a>
+                            <ul class="menuS">
+                                <li><a href="#none">병원장인사말 </a></li>
+                                <li><a href="#none">역대병원장 연혁</a></li>
+                                <li><a href="#none">어린이병원H.I</a></li>
+                                <li class="act"><a href="#none">캐릭터</a></li>
+                                <li><a href="#none">현황및통계</a></li>
+                                <li><a href="#none">홍보동영상/갤러리</a></li>
+                                <li><a href="#none">어린이병원 10년사</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">종합안내도 </a>
+                            <ul class="menuS">
+                                <li><a href="#none">병원장인사말 </a></li>
+                                <li><a href="#none">역대병원장 연혁</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">전화번호안내</a></li>
+                        <li class="child">
+                            <a href="#none">병원소식</a>
+                            <ul class="menuS">
+                                <li><a href="#none">병원장인사말 </a></li>
+                                <li><a href="#none">역대병원장 연혁</a></li>
+                            </ul>
+                        </li>
+                        <li class="child">
+                            <a href="#none">웹진</a>
+
+                            <ul class="menuS">
+                                <li><a href="#none">병원장인사말 </a></li>
+                                <li><a href="#none">역대병원장 연혁</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">관련사이트</a></li>
+                    </ul>
+                    <div class="telBox">
+                        <b>상담 및 예약</b>
+                        <em class="tel1">1577-7512 </em>
+                        <em class="tel2">055)360-1000</em>
+                        <span
+                            >접수시간 : 평일 (월~금) <br />
+                            접수 : 오전 08:20 - 오후 16:00 <br />
+                            진료 : 오전 09:00 - 오후 17:30</span
+                        >
+                    </div>
+                    <div class="telBox2">
+                        <b>의료진 찾기</b>
+                        <span
+                            >진료받고 싶으신 의료진을 <br />
+                            검색하세요</span
+                        >
+                        <form action="post" class="form_doctorsearch">
+                            <input type="text" class="inp_t" placeholder="의료진을 입력하세요." title="의료진을 입력하세요." />
+                            <button type="button" class="btn_search">
+                                <span class="blind">검색</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- //rnb -->
+
+                <div class="contentsWrap">
+                    <div class="pageTop">
+                        <h2 class="pageTit">캐릭터</h2>
+
+                        <!-- page_util -->
+
+                        <div class="page_util">
+                            <div class="share">
+                                <button type="button" class="btn_share">공유</button>
+                                <ul>
+                                    <li>
+                                        <a href="#none"><img src="./images/layout/f_sns_facebook_on.png" alt="페이스북" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#none"><img src="./images/layout/f_sns_nBlog_on.png" alt="네이버블로그" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#none"><img src="./images/layout/f_sns_youtube_on.png" alt="유투브" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#none"><img src="./images/layout/f_sns_nPost_on.png" alt="네이버포스트" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="mailto:" target="_blank" title="새창" class="btn_email">이메일</a>
+                            <button type="button" class="btn_print">프린트</button>
+                        </div>
+
+                        <!-- //page_util -->
+                    </div>
+
+                    <article>
+                        <!-- 컨텐츠(내용) -->
+
+                        <div class="directorTxt">
+                            <div class="chart-intro">
+                                <img src="./images/contents/cont-1-1-4/img-character-intro.png" alt="" class="img-chart-intro" />
+
+                                <div class="tit">
+                                    부산대어린이병원의
+                                    <strong> 다양한 캐릭터를 만나보세요.</strong>
+
+                                    <a href="#none" class="link-download">캐릭터 jpg 파일 다운로드</a>
+                                </div>
+                            </div>
+                            <ul class="chart-lst-type1">
+                                <li>
+                                    <em>Only one in the world</em>
+                                    <strong> 세상에서 하나뿐인 소중한 나</strong>
+                                    <p>
+                                        부산대학교 어린이병원의 캐릭터 하나는 "세상에 하나뿐인 소중한 나"를 <br />
+                                        의미합니다. 친근하고 귀여운 이미지를 강조하였으며, 마치 어린이가 <br />
+                                        손으로 그린듯한 느낌을 표현하였습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <em>Best(Top) of the world</em>
+                                    <strong> 세상에서 최고, 세상의 최정상</strong>
+                                    <p>
+                                        부산대학교 어린이병원의 캐릭터 마루는 "세상에서 최고, 세상의 <br />
+                                        최정상"을 의미합니다. 친근하고 말썽꾸러기 같은 이미지를 강조하였으며, <br />
+                                        마치 어린이가 손으로 그린듯한 느낌을 표현하였습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong> YELLOW+ JELLY SHOE</strong>
+                                    <p>
+                                        부산대학교 어린이병원의 캐릭터 옐리슈는 노랑을 뜻하는 <br />
+                                        YELLOW(옐로우)와를 시원한 여름용 샌들을 뜻하는<br />
+                                        JELLY SHOE(젤리슈즈)의 머리글을 혼합하여 탄생하게 되었습니다. <br />
+                                        막힌곳 없이 뻥 뚫려있는 시원한 여름용 신발처럼 아픈곳이 시원하게 낫게 하는 캐릭터로 표현하였습니다.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="chart-lst-type2">
+                                <li>모모</li>
+                                <li>뚜바</li>
+                                <li>루키</li>
+                                <li>러피</li>
+                                <li>뽀야</li>
+                                <li>여자의사</li>
+                                <li>남자의사</li>
+                                <li>간호사</li>
+                            </ul>
+                        </div>
+
+                        <!-- //컨텐츠(내용) -->
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div id="footer">
+            <strong class="network"><button type="button">PNUH 네트워크</button></strong>
+
+            <div class="pop_wrap" id="pnuh_network">
+                <!-- popup layer(레이어) -->
+                <section class="popLayout2 popLayer">
+                    <h2 class="popTit">PNUH 네트워크</h2>
+
+                    <div class="popConts">
+                        <div class="popInner limit">
+                            <!-- 팝업 내용 입력-->
+
+                            <div class="network_list network01">
+                                <h3>PNUH 네트워크</h3>
+                                <ul>
+                                    <li><a href="#none">부산대학교병원</a></li>
+                                    <li><a href="#none">양산부산대학교병원</a></li>
+                                    <li><a href="#none">부산대학교어린이병원</a></li>
+                                    <li><a href="#none">부산대학교치과병원</a></li>
+                                    <li><a href="#none">부산대학교한방병원</a></li>
+                                    <li><a href="#none">영남권역재활병원</a></li>
+                                    <li><a href="#none">진료협력센터</a></li>
+                                    <li><a href="#none">발전위원회</a></li>
+                                    <li><a href="#none">의생명연구원</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="network_list network02">
+                                <h3>진료과 및 클리닉</h3>
+                                <ul>
+                                    <li><a href="#none">가정의학과</a></li>
+                                    <li><a href="#none">감염내과</a></li>
+                                    <li><a href="#none">내분비대사내과</a></li>
+                                    <li><a href="#none">류마티스내과</a></li>
+                                    <li><a href="#none">마취통증의학과</a></li>
+                                    <li><a href="#none">방사선종양학과</a></li>
+                                    <li><a href="#none">병리학과</a></li>
+                                    <li><a href="#none">비뇨의학과</a></li>
+                                    <li><a href="#none">산부인과</a></li>
+                                    <li><a href="#none">성형외과</a></li>
+                                    <li><a href="#none">소화청소년과</a></li>
+                                    <li><a href="#none">소화기내과</a></li>
+                                    <li><a href="#none">순환기내과</a></li>
+                                    <li><a href="#none">신경과</a></li>
+                                    <li><a href="#none">신경외과</a></li>
+                                    <li><a href="#none">신장내과</a></li>
+                                    <li><a href="#none">안과</a></li>
+                                    <li><a href="#none">영상의학과</a></li>
+                                    <li><a href="#none">외과</a></li>
+                                    <li><a href="#none">외상외과</a></li>
+                                    <li><a href="#none">응급의학과</a></li>
+                                    <li><a href="#none">이빈인후과</a></li>
+                                    <li><a href="#none">재활의학과</a></li>
+                                    <li><a href="#none">정신건강의학과</a></li>
+                                    <li><a href="#none">정형외과</a></li>
+                                    <li><a href="#none">진단검사의학과</a></li>
+                                    <li><a href="#none">치과진료센터</a></li>
+                                    <li><a href="#none">피부과</a></li>
+                                    <li><a href="#none">한의과</a></li>
+                                    <li><a href="#none">핵의학과</a></li>
+                                    <li><a href="#none">혈액종양내과</a></li>
+                                    <li><a href="#none">호흡기알레르기내과</a></li>
+                                    <li><a href="#none">흉부외과</a></li>
+                                    <li><a href="#none">간췌담도암클리닉</a></li>
+                                    <li><a href="#none">대장암클리닉</a></li>
+                                    <li><a href="#none">부인암클리닉</a></li>
+                                    <li><a href="#none">위암클리닉</a></li>
+                                    <li><a href="#none">유방암클리닉</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="network_list network03">
+                                <h3>주요센터</h3>
+                                <ul>
+                                    <li><a href="#none">감마나이프센터</a></li>
+                                    <li><a href="#none">건강증진센터</a></li>
+                                    <li><a href="#none">국제진료센터</a></li>
+                                    <li><a href="#none">권역외상센터</a></li>
+                                    <li><a href="#none">권역호흡기전문질환센터</a></li>
+                                    <li><a href="#none">금연지원센터</a></li>
+                                    <li><a href="#none">난임센터</a></li>
+                                    <li><a href="#none">로봇수술센터</a></li>
+                                    <li><a href="#none">부산지역응급의료센터</a></li>
+                                    <li><a href="#none">부산장애인구강진료센터</a></li>
+                                    <li><a href="#none">부산지역암센터</a></li>
+                                    <li><a href="#none">심뇌혈관센터</a></li>
+                                    <li><a href="#none">완화의료센터</a></li>
+                                    <li><a href="#none">임상시험센터</a></li>
+                                    <li><a href="#none">장기이식센터</a></li>
+                                    <li><a href="#none">조혈모세포이식센터</a></li>
+                                    <li><a href="#none">토모테라피센터</a></li>
+                                    <li><a href="#none">통합의학센터</a></li>
+                                    <li><a href="#none">PET센터</a></li>
+                                    <li><a href="#none">해양의료연구센터</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn_popClose">창닫기</button>
+                </section>
+                <!-- //popup layer(레이어) -->
+            </div>
+
+            <footer>
+                <ul class="f_mark">
+                    <li>
+                        <img
+                            src="./images/layout/f_mark_isms.png"
+                            alt="정보보호관리체계인증 &middot; Information Security Management System &middot; KISA 한국인터넷진흥원"
+                            class="markImg"
+                        />
+                        <span>
+                            인증범위 : 의료정보시스템 (EMR, OCS) 및 홈페이지 서비스 운영<br />
+                            유효기간 : 2017.12.11 ~ 2020.12.10
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./images/layout/f_mark_alio.png" alt="공공기관 채용정보 시스템" class="markImg" />
+                        <span>
+                            ALIO<br />
+                            JOB-ALIO
+                        </span>
+                    </li>
+                    <li>
+                        <img
+                            src="./images/layout/f_mark_koiha.png"
+                            alt="HEALTHCARE QUALITY PATIENT SAFETY 보건복지부 인증 의료기관"
+                            class="markImg"
+                        />
+                        <span>
+                            보건복지부 의료기관<br />
+                            평가인증
+                        </span>
+                    </li>
+                </ul>
+
+                <ul class="f_sns">
+                    <li><a href="#none" class="btn_cirFacebook">페이스북</a></li>
+                    <li><a href="#none" class="btn_cirNblog">네이버 블로그</a></li>
+                    <li><a href="#none" class="btn_cirYoutube">유투브</a></li>
+                    <li><a href="#none" class="btn_cirNpost">네이버 포스트</a></li>
+                </ul>
+
+                <ul class="f_menu">
+                    <li><a href="#none" class="point">개인정보처리방침</a></li>
+                    <li><a href="#none">영상정보처리기기 설치운영방침</a></li>
+                    <li><a href="#none">이메일주소수집거부</a></li>
+                    <li><a href="#none">웹접근성준수지침</a></li>
+                    <li><a href="#none">홈페이지 이용안내</a></li>
+                    <li><a href="#none">환자권리장전</a></li>
+                    <li><a href="#none">병원유리강령</a></li>
+                    <li><a href="#none">고객헌장</a></li>
+                </ul>
+
+                <address>
+                    <span>49241 부산광역시 서구 구덕로 179 부산대학교병원</span> <em>대표전화 : 051-240-7000</em>
+                    <em>응급전화 : 051-240-7158</em> <em>전화예약 : 051-240-7300</em>
+                </address>
+                <p class="copyright">ⓒ 2020 Pusan National University Hospital. All Rights Reserved. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <button type="button" class="btn_sideTop">위로</button>
+    </body>
+</html>

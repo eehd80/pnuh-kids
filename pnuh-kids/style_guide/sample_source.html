@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>부산대학교병원</title>
+
+<link rel="shortcut icon" href="/pnuh/pnuh/images/common/pnuhicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="/pnuh/pnuh/include/css/common.css" />
+
+<script type="text/javascript" src="/pnuh/include/js/jquery-1.9.1.min.js"></script>
+
+<!-- //리뉴얼 신규 -->
+<!--[if lt IE 9]>
+<script src="/pnuh/pnuh/include/js/html5shiv.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/pnuh/pnuh/include/css/reN_layout.css" />
+<script type="text/javascript" src="/pnuh/pnuh/include/js/reN_layout.js"></script>
+<!-- 리뉴얼 신규 -->
+
+<style>
+body {padding:20px;}
+body>h1 {display:block;width:100%;margin-bottom:20px;border-bottom:1px solid #111;font-size:20px;font-weight:bold;line-height:30px;}
+body>h2 {display:block;padding:5px;color:#333;font-size:14px;font-weight:bold;line-height:24px;background:#f0f0f0;}
+body h3 {display:block;margin-bottom:10px;color:#555;font-size:14px;line-height:24px;}
+body h3>span {font-size:12px;}
+body hr {position:relative;left:auto;width:100%;height:1px;margin:0 0 10px;border:none;background:#e0e0e0;}
+.sampleGrp {/*overflow:hidden;*/padding:10px 0;}
+body>h3+div {margin-bottom:30px;}
+.guide_info {padding:10px;font-size:13px;line-height:24px;background:#f6f6f6;color:#666;}
+.guide_notice {padding:5px 0;color:#666;font-size:14px;line-height:24px;}
+
+.typeColor>span {display:inline-block;padding:10px;font-size:12px;font-weight:bold;}
+.typeColor>span+span {margin-left:15px;}
+.colorBox01, .colorBox01_t, .colorBox02, .colorBox02_t {display:inline-block;height:30px;padding:0 15px;line-height:30px;text-align:center;vertical-align:top;}
+.colorBox01_t,
+.colorBox02_t {color:#fff;font-weight:bold;}
+.colorBox01>span,
+.colorBox02>span,
+.colorBox01_t>span,
+.colorBox02_t>span {margin-right:15px;color:#333;font-size:12px;}
+</style>
+</head>
+
+<body>
+<h1>샘플소스</h1>
+
+<!--<h2>기본 color값</h2>
+<div class="sampleGrp typeColor">-->
+    <!-- 컬러만 참조 -->
+    <!--<span class="colorBox01" style="background:#4daf36;"><span>bg : #4daf36</span></span><span class="colorBox01_t" style="background:#4d9d3a;"><span>bg : #4d9d3a</span>T</span>
+    <span class="colorBox02" style="background:#ff8932;"><span>bg : #ff8932</span></span><span class="colorBox02_t" style="background:#f26700;"><span>bg : #f26700</span>T</span>
+
+    <br /><br />-->
+
+    <!--<span style="background:#b9193f;color:#fff;">(기본) #b9193f</span>
+    <span style="background:#846841;color:#fff;">(기본) #846841</span>
+    <span style="background:#000;color:#fff;">(폰트) #000</span>
+    <span style="background:#666;color:#fff;">(폰트) #666</span>
+    <span style="background:#dbdee1;">(라인) #dbdee1</span>
+</div>
+
+<hr noshade="noshade" />-->
+
+<h2>페이징</h2>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <div class="pagination">
+        <button type="button" class="btn_first"><span>처음</span></button>
+        <button type="button" class="btn_prev"><span>이전</span></button>
+        <ul class="paging">
+            <li><button type="button" class="on">1</button></li>
+            <li><button type="button">2</button></li>
+            <li><button type="button">3</button></li>
+            <li><button type="button">4</button></li>
+            <li><button type="button">5</button></li>
+            <li><button type="button">6</button></li>
+            <li><button type="button">7</button></li>
+            <li><button type="button">8</button></li>
+            <li><button type="button">9</button></li>
+            <li><button type="button">10</button></li>
+        </ul>
+        <button type="button" class="btn_next"><span>다음</span></button>
+        <button type="button" class="btn_end"><span>끝</span></button>
+    </div>
+
+<!-- //소스 -->
+</div>
+
+<hr noshade="noshade" />
+
+<h2>버튼</h2>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <h3>일반</h3>
+
+    <a href="#none" class="btnC blue"><span>상세소개</span></a>
+    <a href="#none" class="btnC green"><span>진료예약</span></a>
+    <a href="#none" class="btnC darkgray"><span>목록</span></a>
+    <a href="#none" class="btnC white"><span>더보기</span></a>
+
+    <br /><br />
+
+    <a href="#none" class="btnC darkgray_list"><span>진료과 목록</span></a>
+
+    <br /><br />
+
+    <h3>기타</h3>
+
+    <div style="display:inline-block;background:#00589e">
+        <a href="#none" class="btnC_s whiteLine"><span>다시 검색하기</span></a>
+        <a href="#none" class="btnC_s whiteLine"><span>보기</span></a>
+    </div>
+    <a href="#none" class="btnC_s white"><span>보기</span></a>
+
+    <br /><br />
+
+    <a href="#none" class="btnC_c gray_intro"><span>소개</span></a>
+    <a href="#none" class="btnC_c gray_loc"><span>위치</span></a>
+    <a href="#none" class="btnC_c gray_person"><span>의료진</span></a>
+
+    <a href="#none" class="btnC_c gray_intro on"><span>소개</span></a>
+    <a href="#none" class="btnC_c gray_loc on"><span>위치</span></a>
+    <a href="#none" class="btnC_c gray_person on"><span>의료진</span></a>
+
+    <br /><br />
+
+<!-- //소스 -->
+</div>
+
+<hr noshade="noshade" />
+
+<h2>[컨텐츠] 입력(기본값 : 100%)</h2>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <span class="inp_r"><input type="radio" name="inp_r01" id="inp_r01" /><label for="inp_r01">라디오버튼 기본</label></span>
+    &nbsp;&nbsp;
+    <span class="inp_r"><input type="radio" name="inp_r01" id="inp_r02" checked="checked" /><label for="inp_r02">라디오버튼 선택</label></span>
+    &nbsp;&nbsp;
+    <span class="inp_r green"><input type="radio" name="inp_r03" id="inp_r03" checked="checked" /><label for="inp_r03">라디오버튼 컬러 선택</label></span>
+    <br><br>
+
+    <span class="inp_r cCir"><input type="radio" name="inp_r04" id="inp_cCir01" /><label for="inp_cCir01">라디오버튼 체크</label></span>
+    &nbsp;&nbsp;
+    <span class="inp_r cCir"><input type="radio" name="inp_r04" id="inp_cCir02" checked="" /><label for="inp_cCir02">라디오버튼 체크</label></span>
+    <br><br>
+
+    <span class="inp_c"><input type="checkbox" name="inp_c_01" id="inp_c_01" /><label for="inp_c_01">체크박스 기본</label></span>
+    &nbsp;&nbsp;
+    <span class="inp_c"><input type="checkbox" name="inp_c_02" id="inp_c_02" checked="" /><label for="inp_c_02">체크박스 선택</label></span>
+    &nbsp;&nbsp;
+
+    <br><br>
+    <span class="inp_c rec"><input type="checkbox" name="inp_c2_01" id="inp_c2_01" /><label for="inp_c2_01">체크박스2 기본</label></span>
+    &nbsp;&nbsp;
+    <span class="inp_c rec"><input type="checkbox" name="inp_c2_02" id="inp_c2_02" checked="" /><label for="inp_c2_02">체크박스2 선택</label></span>
+
+    <br><br>
+
+    <select class="inp_s" title="xxx옵션 선택">
+        <option>선택</option>
+        <option>옵션</option>
+        <option>옵션옵션옵션옵션옵션옵션옵션</option>
+    </select>
+
+    <br><br>
+
+    <select class="inp_s" title="xxx옵션 선택" disabled>
+        <option>선택(비활성화)</option>
+        <option>옵션</option>
+        <option>옵션옵션옵션옵션옵션옵션옵션</option>
+    </select>
+
+    <br><br>
+
+    <input type="text" class="inp_t" name="" id="" onfocus="if(this.value != ''){value=''}" value="입력값" title="xxx 입력" />
+
+    <br><br>
+
+    <fieldset class="searchLine_blue">
+        <legend>검색</legend>
+        <input type="text" placeholder="검색어를 입력하세요." title="검색어 입력" />
+        <ul class="wordSearch">
+            <li><a href="#none">가정의학과</a></li>
+            <li><a href="#none">감염내과</a></li>
+            <li><a href="#none">내분비대사내과</a></li>
+            <li><a href="#none">류마티스내과</a></li>
+            <li><a href="#none">마취통증의학과</a></li>
+            <li><a href="#none">방사선종양학과</a></li>
+            <li><a href="#none">병리학과</a></li>
+            <li><a href="#none">비뇨의학과</a></li>
+            <li><a href="#none">산부인과</a></li>
+            <li><a href="#none">성형외과</a></li>
+            <li><a href="#none">소화청소년과</a></li>
+            <li><a href="#none">소화기내과</a></li>
+            <li><a href="#none">순환기내과</a></li>
+            <li><a href="#none">신경과</a></li>
+            <li><a href="#none">신경외과</a></li>
+            <li><a href="#none">신장내과</a></li>
+            <li><a href="#none">안과</a></li>
+            <li><a href="#none">영상의학과</a></li>
+            <li><a href="#none">외과</a></li>
+            <li><a href="#none">외상외과</a></li>
+            <li><a href="#none">응급의학과</a></li>
+            <li><a href="#none">이빈인후과</a></li>
+            <li><a href="#none">재활의학과</a></li>
+            <li><a href="#none">정신건강의학과</a></li>
+            <li><a href="#none">정형외과</a></li>
+            <li><a href="#none">진단검사의학과</a></li>
+            <li><a href="#none">치과진료센터</a></li>
+            <li><a href="#none">피부과</a></li>
+            <li><a href="#none">한의과</a></li>
+            <li><a href="#none">핵의학과</a></li>
+            <li><a href="#none">혈액종양내과</a></li>
+            <li><a href="#none">호흡기알레르기내과</a></li>
+            <li><a href="#none">흉부외과</a></li>
+            <li><a href="#none">간췌담도암클리닉</a></li>
+            <li><a href="#none">대장암클리닉</a></li>
+            <li><a href="#none">부인암클리닉</a></li>
+            <li><a href="#none">위암클리닉</a></li>
+            <li><a href="#none">유방암클리닉</a></li>
+        </ul>
+        <button type="button" class="btn_search">검색</button>
+    </fieldset>
+
+    <br><br>
+
+    <textarea class="inp_area" rows="5" onfocus="if(this.value != ''){value=''}" value="" title="xxx 입력">textarea</textarea>
+
+    <br /><br />
+
+<!-- //소스 -->
+</div>
+
+<hr noshade="noshade" />
+
+<h2>[컨텐츠] 페이지탭, 컨텐츠탭</h2>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <!-- 컨텐츠 탭 -->
+    <div class="contTab">
+        <ul class="tabList">
+            <li class="on"><a href="#none">3뎁스메뉴</a></li>
+            <li><a href="#none">3뎁스 메뉴</a></li>
+            <li><a href="#none">탭메뉴명이 아주 길 때</a></li>
+            <li><a href="#none">탭메뉴명이 아주 더~ 길 때</a></li>
+            <li><a href="#none">3뎁스메뉴</a></li>
+            <li><a href="#none">3뎁스메뉴</a></li>
+            <li><a href="#none">탭메뉴명이 아주 더~ 길 때</a></li>
+        </ul>
+    </div>
+    <!-- //컨텐츠 탭 -->
+
+</div>
+
+<hr noshade="noshade" />
+
+<h2>[컨텐츠] 텍스트</h2>
+<p class="guide_notice">*참고* 타이틀은 태그 종류에 관계없이 class로 스타일 적용 가능</p>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <h3 class="pageTit">페이지 타이틀</h3>
+
+    <p class="txt">일반 텍스트 영역입니다 일반 텍스트 영역입니다일반 텍스트 영역입니다 일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다</p>
+
+    <p class="exclam">일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다일반 텍스트 영역입니다 일반 텍스트 영역입니다일반 텍스트 영역입니다</p>
+
+    <br /><br />
+
+    <ul class="list_dotGray">
+        <li>리스트 고등학교나 대학에 재학하는 학생들도 빠짐없이</li>
+        <li>리스트 고등학교나 대학에 재학하는 학생들도 빠짐없이 징병검사를 받아야 하며, 징병검사 결과 현역병 입영대상이나 리스트 고등학교나 대학에 재학하는 학생들도 빠짐없이 징병검사를 받아야 하며, 징병검사 결과 현역병 입영대상이나</li>
+    </ul>
+
+    <br /><br />
+
+<!-- //소스 -->
+</div>
+
+<hr noshade="noshade" />
+
+<h2>[컨텐츠] 테이블</h2>
+<p class="guide_info">
+<b>테이블 규칙</b><br />
+<span style="color:red;">* 테이블 셀 기본은 중앙정렬.</span><br />
+  - 좌측정렬이 필요한 경우 :<br />
+  &nbsp;&nbsp;전체 좌측정렬일때는 table태그에 txtL 클래스 추가. 예) &lt;table class="lineTop_tb txtL"&gt;<br />
+  &nbsp;&nbsp;부분 좌측정렬일때는 th,td태그에 txtL 클래스 추가. 예) &lt;td class="txtL"&gt;학기 개강전&lt;/td&gt;<br />
+* lineTop_tb는 항목이 위에 있는 표 / lineTop_tbL는 항목이 좌측에 있는 표.<br />
+<span style="color:red;">* 테이블+테이블 / 테이블+타이틀 / 테이블버튼+타이틀 / dot리스트+타이틀의 경우 각각 공통간격이 설정</span>되어 있음<br />
+ &nbsp;&nbsp;다른 간격설정시 Component(mT, mB)값 별도 설정<br />
+</p>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+    <br /><br />
+
+    <div class="lineTop_tbArea">
+        <table class="lineTop_tb">
+            <caption><p>항목,내용,다운로드,전화번호 항목으로 나열한 부서안내</p></caption>
+            <colgroup>
+                <col width="15%" /><col width="15%" /><col /><col width="10%"><col width="20%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">항목</th>
+                    <th scope="col">내용</th>
+                    <th scope="col">다운로드</th>
+                    <th scope="col">전화번호</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">기획처</td>
+                    <td>기획지원팀</td>
+                    <td class="txtL">인사, 총무, 서무, 경리, 조달, 영선, 부속실, 국가장학</td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td>031-229-6221, 6223</td>
+                </tr>
+                <tr>
+                    <td>재무관리팀</td>
+                    <td class="txtL">법인, 예산, 결산, 국가장학</td>
+                    <td></td>
+                    <td>031-229-6222, 6224</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">기획처</td>
+                    <td rowspan="2">재무팀</td>
+                    <td class="txtL pointBluegreen">강조내용1</td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td>031-229-6221</td>
+                </tr>
+                <tr>
+                    <td class="txtL pointOrange">강조내용2</td>
+                    <td></td>
+                    <td>031-229-6222</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">교육학습지원센터</td>
+                    <td rowspan="2">전산정보팀</td>
+                    <td class="txtL">프로그램, 시스템</td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td rowspan="2">031-229-6223</td>
+                </tr>
+                <tr>
+                    <td class="pointGray txtL">프로그램, 기획, 정보보안</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br /><br />
+
+    <div class="lineTop_tbArea">
+        <table class="lineTop_tbL">
+            <caption><p>항목,내용 항목으로 나열한 부서안내</p></caption>
+            <colgroup>
+                <col width="15%" /><col width="15%" /><col width="15%" /><col /><col width="10%"><col width="20%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="2">항목1</th>
+                    <td rowspan="2">기획처</td>
+                    <td>기획지원팀</td>
+                    <td class="txtL">인사, 총무, 서무, 경리, 조달, 영선, 부속실, 국가장학</td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td>031-229-6221, 6223</td>
+                </tr>
+                <tr>
+                    <td>재무관리팀</td>
+                    <td class="txtL">법인, 예산, 결산, 국가장학</td>
+                    <td></td>
+                    <td>031-229-6222, 6224</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">항목2</th>
+                    <td rowspan="2">기획처</td>
+                    <td rowspan="2">재무팀</td>
+                    <td class="txtL pointBluegreen">강조내용1</td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td>031-229-6221</td>
+                </tr>
+                <tr>
+                    <td class="txtL pointOrange">강조내용2</td>
+                    <td></td>
+                    <td>031-229-6222</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">항목3</th>
+                    <td rowspan="2">교육학습지원센터</td>
+                    <td rowspan="2">전산정보팀</td>
+                    <td class="txtL"><a href="#none" class="a_line">링크 적용된 텍스트 예시1</a>, <a href="#none" class="a_line a_point">링크 텍스트 예시2</a></td>
+                    <td><a href="#none"><img src="/gjcu_lms/type/common/img/common/ico_doc_b.png" alt="다운로드 파일" /></a></td>
+                    <td rowspan="2">031-229-6223</td>
+                </tr>
+                <tr>
+                    <td class="pointGray txtL">프로그램, 기획, 정보보안</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br /><br />
+
+    * 테이블 바로 밑에 버튼이 위치할 경우 아래 소스(.tbArea_btn) 사용
+    <div class="tbArea_btn">
+        <a href="#none" class="btnC blue"><span>확인</span></a>
+    </div>
+
+    <br /><br />
+
+
+<!-- //소스 -->
+</div>
+
+<hr noshade="noshade" />
+
+<h2>[컨텐츠] 기타</h2>
+<div class="sampleGrp">
+<!-- 소스 -->
+
+
+
+<!-- //소스 -->
+</div>
+
+</body>
+</html>

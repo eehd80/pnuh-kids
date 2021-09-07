@@ -1,0 +1,162 @@
+// 서브페이지 컨텐츠
+@charset "UTF-8";
+@import "variables", "mixins";
+
+// 캐릭터
+.chart-intro {
+    position: relative;
+    margin-top: 35px;
+    .tit {
+        position: absolute;
+        top: 18px;
+        left: 0;
+        font-size: 36px;
+        font-weight: 300;
+        color: #000;
+        letter-spacing: -2.16px;
+        line-height: 1.4;
+        strong {
+            display: block;
+            font-weight: 700;
+            color: #00b1f1;
+        }
+    }
+    .link-download {
+        position: relative;
+        display: inline-block;
+        margin-top: 15px;
+        padding: 9px 22px 10px 50px;
+        border-radius: 10px 0;
+        background-color: #576062;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: -0.6px;
+        color: #fff;
+        &::before {
+            content: "";
+            display: block;
+            @include posY;
+            left: 20px;
+            width: 22px;
+            height: 26px;
+            background: url(../../images/layout/ico_download.png) 0 0 no-repeat;
+        }
+    }
+    .img-chart-intro {
+        margin: 5px 0 0 16px;
+    }
+}
+.chart-lst-type1 {
+    margin-top: 7px;
+    padding-top: 60px;
+    border-top: 1px solid #cdcdcd;
+    li {
+        padding-left: 400px;
+        &:first-child {
+            padding-top: 26px;
+            padding-bottom: 20px;
+            margin-bottom: 46px;
+            background: url(../../images/contents/cont-1-1-4/img-char1.png) 60px 0 no-repeat;
+            strong::after {
+                top: -38px;
+                right: 29px;
+                width: 64px;
+                height: 35px;
+                background: url(../../images/contents/cont-1-1-4/img-char1-1.png) 0 0 no-repeat;
+            }
+        }
+        &:nth-child(2) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin-bottom: 45px;
+            background: url(../../images/contents/cont-1-1-4/img-char2.png) 93px 0 no-repeat;
+            strong::after {
+                top: -48px;
+                right: 48px;
+                width: 44px;
+                height: 44px;
+                background: url(../../images/contents/cont-1-1-4/img-char2-1.png) 0 0 no-repeat;
+            }
+        }
+        &:nth-child(3) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            background: url(../../images/contents/cont-1-1-4/img-char3.png) 88px 0 no-repeat;
+            strong::after {
+                top: -23px;
+                right: -51px;
+                width: 40px;
+                height: 51px;
+                background: url(../../images/contents/cont-1-1-4/img-char3-1.png) 0 0 no-repeat;
+            }
+        }
+    }
+    em {
+        display: block;
+        font-size: 15px;
+        color: #a1a1a1;
+    }
+    strong {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: -0.88px;
+        color: #ed6d1e;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+    }
+    p {
+        margin-top: 8px;
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: -0.68px;
+        color: #555;
+    }
+}
+
+.chart-lst-type2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 74px;
+    transform: translateX(-8px);
+    li {
+        width: 25%;
+        height: 135px;
+        margin-bottom: 35px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        text-indent: -9999px;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        &:first-child {
+            background-image: url(../../images/contents/cont-1-1-4/img-char4.png);
+        }
+        &:nth-child(2) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char5.png);
+        }
+        &:nth-child(3) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char6.png);
+        }
+        &:nth-child(4) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char7.png);
+        }
+        &:nth-child(5) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char8.png);
+        }
+        &:nth-child(6) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char9.png);
+        }
+        &:nth-child(7) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char10.png);
+        }
+        &:nth-child(8) {
+            background-image: url(../../images/contents/cont-1-1-4/img-char11.png);
+        }
+    }
+}
