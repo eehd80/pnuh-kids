@@ -430,16 +430,21 @@ header .logo {
   position: absolute;
   left: 30px;
   top: 28px;
-  z-index: 100;
+  z-index: 110;
   width: 232px;
   height: 39px;
   background: url(../../images/common/logo.png) 0 0 no-repeat;
   text-indent: -9999px;
 }
 
+header .logo a {
+  display: block;
+}
+
 header nav {
   overflow: hidden;
   position: relative;
+  z-index: 100;
   height: 100px;
 }
 
@@ -1480,7 +1485,6 @@ header .gnb_util .btn_topSearch {
 
 #footer {
   position: relative;
-  z-index: 100;
   background: #1c293c;
 }
 
@@ -3802,6 +3806,98 @@ footer .copyright {
   text-decoration: none;
 }
 
+/*** 상단 메인띠배너 ***/
+.headerBnr {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #04315e;
+  z-index: 10000;
+}
+
+.headerBnr .bnrWrap {
+  position: relative;
+  width: 1413px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 75px;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.headerBnr .bnrWrap a > img {
+  max-width: 845px !important;
+}
+
+.headerBnr .todayLimit {
+  position: absolute;
+  right: 75px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.headerBnr .todayLimit > input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  z-index: 0;
+}
+
+.headerBnr .todayLimit > label {
+  display: block;
+  position: relative;
+  padding-left: 17px;
+  background: url(../../images/main/headerBnr_check.png) no-repeat left top;
+  color: #fff;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -1px;
+  z-index: 1;
+}
+
+.headerBnr .todayLimit > input[type="checkbox"]:checked + label {
+  background: url(../../images/main/headerBnr_checkOn.png) no-repeat left top;
+}
+
+.headerBnr .btn_close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  overflow: hidden;
+  width: 27px;
+  height: 27px;
+  margin-top: -14px;
+  background: url(../../images/main/headerBnr_close.png) no-repeat center;
+  text-indent: -999px;
+}
+
+.typeEasy .headerBnr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 1413px) {
+  .headerBnr .bnrWrap {
+    width: 1188px;
+    padding: 0 60px 0 0;
+  }
+  .headerBnr .todayLimit {
+    right: 60px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   #easyService,
   .mNews,
@@ -3810,6 +3906,11 @@ footer .copyright {
   }
   .easy_ct {
     padding-left: 40px;
+  }
+  #contents #rnb_nav {
+    width: calc(100% - 970px);
+    min-width: 260px;
+    max-width: 300px;
   }
 }
 

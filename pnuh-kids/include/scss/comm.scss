@@ -149,16 +149,20 @@ header {
         position: absolute;
         left: 30px;
         top: 28px;
-        z-index: 100;
+        z-index: 110;
         width: 232px;
         height: 39px;
         background: url(../../images/common/logo.png) 0 0 no-repeat;
         text-indent: -9999px;
+        a {
+            display: block;
+        }
     }
 
     nav {
         overflow: hidden;
         position: relative;
+        z-index: 100;
         height: 100px;
     }
 
@@ -1187,7 +1191,7 @@ header {
 // footer
 #footer {
     position: relative;
-    z-index: 100;
+    // z-index: 2000;
     background: #1c293c;
 
     footer {

@@ -64,11 +64,24 @@ $(function(){
 		}
 	});
 
+	$("header .gnb_util .myInfo .btn_member>button").click(function(){
+		if($("header .gnb_util .myInfo .infoList").hasClass('on')){
+			$("header .gnb_util .myInfo .infoList").removeClass("on");
+		}else{
+			$("header .gnb_util .myInfo .infoList").addClass("on");
+			$("header .gnb_util .language .langList").removeClass("on");
+		}
+	});
+	$("header .gnb_util .myInfo .infoList a").click(function(){
+		$("header .gnb_util .myInfo .infoList").removeClass("on");
+	});
+
 	$("header .gnb_util .language .btn_langSel").click(function(){
 		if($("header .gnb_util .language .langList").hasClass('on')){
 			$("header .gnb_util .language .langList").removeClass("on");
 		}else{
 			$("header .gnb_util .language .langList").addClass("on");
+			$("header .gnb_util .myInfo .infoList").removeClass("on");
 		}
 	});
 	$("header .gnb_util .language .langList a").click(function(){
@@ -81,16 +94,22 @@ $(function(){
 	});
 
 	/* 상단 검색창 */
-	$("header .gnb_util .btn_topSearch").mouseover(function(){
+	$("header .gnb_util .btn_topSearch").click(function(){
 		if($("html").is('#typeTeamIntro') == false){
 			$("header .gnb_util .language .langList").removeClass("on");
 			$(".sec_topsSearch").addClass('on');
 		}
 	});
+	/*mouseleave 닫히게 할때
 	$(".sec_topsSearch").mouseleave(function(){
 		if($("html").is('#typeTeamIntro') == false){
 			$(this).removeClass('on');
 			$("header .gnb_util .btn_topSearch").focus();
+		}
+	});*/
+	$(".sec_topsSearch .topSrch>.btn_srch").click(function(){
+		if($("html").is('#typeTeamIntro') == false){
+			$(".sec_topsSearch").removeClass('on');
 		}
 	});
 
@@ -641,7 +660,7 @@ $(function(){
 	$("header .gnb_util .btn_login").focusin(function(){
 		$("#gnb>li>a").trigger('mouseleave');
 	});
-	$("header .gnb_util .btn_login").keydown(function(event){
+	$("header .gnb_util .btn_login, header .gnb_util .myInfo .btn_member>button").keydown(function(event){
 		var v_keyCode = event.keyCode || event.which;
 		if(v_keyCode == 9){
 			if(event.shiftKey){
@@ -658,6 +677,18 @@ $(function(){
 					$("#gnb>li:last-child").find('a').first().focus();
 					return false;
 				}
+			}
+		}
+	});
+
+	$("header .gnb_util .myInfo .infoList>li:last-child>a").keydown(function(event){
+		var v_keyCode = event.keyCode || event.which;
+		if(v_keyCode == 9){
+			if(event.shiftKey){
+			}else{
+				$("header .gnb_util .myInfo .btn_member>button").trigger('click');
+				$("header .gnb_util .language .btn_langSel").focus();
+				return false;
 			}
 		}
 	});
@@ -686,7 +717,8 @@ $(function(){
 	$("header .gnb_util .btn_topSearch").keydown(function(event){
 		var v_keyCode = event.keyCode || event.which;
 		if(v_keyCode == 13){
-			$(this).trigger('mouseover');
+			//$(this).trigger('mouseover');
+			$(this).trigger('click');
 			$(".sec_topsSearch .topSrch>input[type=text]").focus();
 			return false;
 		}
@@ -716,6 +748,11 @@ $(function(){
 				$(".sec_topsSearch").removeClass('on');
 				$(".sec_topsSearch .topSrch>.btn_srch").css('outline','');
 			}
+		}
+		if(v_keyCode == 13){
+			$(".sec_topsSearch").removeClass('on');
+			$(".sec_topsSearch .topSrch>.btn_srch").css('outline','');
+			$("#snb_nav .snbWrap .btn_snbHome").focus();
 		}
 	});
 

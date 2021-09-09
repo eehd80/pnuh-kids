@@ -1622,6 +1622,101 @@
         }
     }
 }
+
+/*** 상단 메인띠배너 ***/
+
+.headerBnr {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background: #04315e;
+    z-index: 10000;
+
+    .bnrWrap {
+        position: relative;
+        width: 1413px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 75px;
+        text-align: center;
+        transition: 0.2s;
+
+        a > img {
+            max-width: 845px !important;
+        }
+    }
+
+    .todayLimit {
+        position: absolute;
+        right: 75px;
+        top: 50%;
+        margin-top: -8px;
+
+        > {
+            input[type="checkbox"] {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 13px;
+                height: 13px;
+                z-index: 0;
+            }
+
+            label {
+                display: block;
+                position: relative;
+                padding-left: 17px;
+                background: url(../../images/main/headerBnr_check.png) no-repeat left top;
+                color: #fff;
+                font-family: "Roboto", "Noto Sans KR", sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: -1px;
+                z-index: 1;
+            }
+
+            input[type="checkbox"]:checked + label {
+                background: url(../../images/main/headerBnr_checkOn.png) no-repeat left top;
+            }
+        }
+    }
+
+    .btn_close {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        overflow: hidden;
+        width: 27px;
+        height: 27px;
+        margin-top: -14px;
+        background: url(../../images/main/headerBnr_close.png) no-repeat center;
+        text-indent: -999px;
+    }
+}
+
+.typeEasy .headerBnr {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 1413px) {
+    .headerBnr {
+        .bnrWrap {
+            width: 1188px;
+            padding: 0 60px 0 0;
+        }
+
+        .todayLimit {
+            right: 60px;
+        }
+    }
+}
+
 @media screen and (max-width: 1280px) {
     #easyService,
     .mNews,
@@ -1630,5 +1725,10 @@
     }
     .easy_ct {
         padding-left: 40px;
+    }
+    #contents #rnb_nav {
+        width: calc(100% - 970px);
+        min-width: 260px;
+        max-width: 300px;
     }
 }
