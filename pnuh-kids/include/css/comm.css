@@ -1128,7 +1128,7 @@ header .gnb_util .btn_topSearch {
   background-image: url(../../images/layout/bg-rnbTit01.png);
 }
 
-#rnb_nav .telBox {
+#rnb_nav .infoBox-yellow {
   display: block;
   height: 195px;
   margin-bottom: 10px;
@@ -1139,7 +1139,7 @@ header .gnb_util .btn_topSearch {
   background: #ffd131 url(../../images/layout/bg-telBox01.png) no-repeat left 15px top 50%;
 }
 
-#rnb_nav .telBox b {
+#rnb_nav .infoBox-yellow b {
   display: block;
   color: #111;
   margin-bottom: 5px;
@@ -1149,7 +1149,7 @@ header .gnb_util .btn_topSearch {
   line-height: 1;
 }
 
-#rnb_nav .telBox .tel1 {
+#rnb_nav .infoBox-yellow .tel1 {
   display: block;
   margin-bottom: 2px;
   color: #000;
@@ -1159,7 +1159,7 @@ header .gnb_util .btn_topSearch {
   line-height: 1;
 }
 
-#rnb_nav .telBox .tel2 {
+#rnb_nav .infoBox-yellow .tel2 {
   display: block;
   margin-bottom: 15px;
   color: #000;
@@ -1169,7 +1169,7 @@ header .gnb_util .btn_topSearch {
   line-height: 1;
 }
 
-#rnb_nav .telBox span {
+#rnb_nav .infoBox-yellow span {
   display: block;
   font-size: 15px;
   font-weight: 300;
@@ -1178,7 +1178,7 @@ header .gnb_util .btn_topSearch {
   color: #7c6927;
 }
 
-#rnb_nav .telBox2 {
+#rnb_nav .infoBox-pink {
   display: block;
   position: relative;
   height: 208px;
@@ -1190,7 +1190,7 @@ header .gnb_util .btn_topSearch {
   background: #ff579b url(../../images/layout/bg-telBox02.png) no-repeat left 1px top 0;
 }
 
-#rnb_nav .telBox2 b {
+#rnb_nav .infoBox-pink b {
   display: block;
   margin-bottom: 10px;
   font-size: 29px;
@@ -1199,7 +1199,7 @@ header .gnb_util .btn_topSearch {
   color: #fff;
 }
 
-#rnb_nav .telBox2 span {
+#rnb_nav .infoBox-pink span {
   font-size: 15px;
   font-weight: 300;
   font-stretch: normal;
@@ -1210,7 +1210,7 @@ header .gnb_util .btn_topSearch {
   color: #fff;
 }
 
-#rnb_nav .telBox2 form {
+#rnb_nav .infoBox-pink form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,7 +1224,7 @@ header .gnb_util .btn_topSearch {
   border-bottom: 2px solid #fff;
 }
 
-#rnb_nav .telBox2 form .inp_t {
+#rnb_nav .infoBox-pink form .inp_t {
   padding: 10px 0;
   border: none;
   background: none;
@@ -1238,23 +1238,23 @@ header .gnb_util .btn_topSearch {
   color: #fff;
 }
 
-#rnb_nav .telBox2 form .inp_t::-webkit-input-placeholder {
+#rnb_nav .infoBox-pink form .inp_t::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.53);
 }
 
-#rnb_nav .telBox2 form .inp_t:-ms-input-placeholder {
+#rnb_nav .infoBox-pink form .inp_t:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.53);
 }
 
-#rnb_nav .telBox2 form .inp_t::-ms-input-placeholder {
+#rnb_nav .infoBox-pink form .inp_t::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.53);
 }
 
-#rnb_nav .telBox2 form .inp_t::placeholder {
+#rnb_nav .infoBox-pink form .inp_t::placeholder {
   color: rgba(255, 255, 255, 0.53);
 }
 
-#rnb_nav .telBox2 form .btn_search {
+#rnb_nav .infoBox-pink form .btn_search {
   display: block;
   position: relative;
   margin-left: -5px;
@@ -1262,7 +1262,7 @@ header .gnb_util .btn_topSearch {
           transform: scaleX(-1);
 }
 
-#rnb_nav .telBox2 form .btn_search::after {
+#rnb_nav .infoBox-pink form .btn_search::after {
   content: "\f002";
   font-family: "Line Awesome Free";
   font-weight: 900;
