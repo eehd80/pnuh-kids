@@ -394,7 +394,7 @@
         font-size: 15px;
         font-weight: 300;
         text-align: center;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba($w, 0.6);
     }
 
     .health-lst {
@@ -508,7 +508,7 @@
             width: 240px;
             height: 45px;
             border-radius: 22px;
-            box-shadow: 4.1px 4.4px 0 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 4.1px 4.4px 0 0 rgba($b, 0.19);
             background-color: #29d4ff;
             line-height: 45px;
             font-size: 18px;
@@ -1155,7 +1155,7 @@
         + .easyGrp {
             margin-top: 50px;
             padding-top: 45px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba($w, 0.3);
         }
     }
 
@@ -1171,7 +1171,7 @@
             height: 45px;
             padding: 0 15px;
             border: 1px solid $w;
-            background: rgba(0, 0, 0, 0);
+            background: rgba($b, 0);
             color: $w;
 
             font-size: 16px;
@@ -1749,7 +1749,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px -10px rgba($b, 0.5);
 }
 
 @media all and (max-width: 1413px) {

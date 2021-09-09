@@ -866,7 +866,7 @@ header {
         box-sizing: border-box;
         padding: 24px 17px 20px 103px;
         border-radius: 15px;
-        background: #ffd131 url(../../images/layout/bg-telBox01.png) no-repeat left 15px top 50%;
+        background: $prim4 url(../../images/layout/bg-telBox01.png) no-repeat left 15px top 50%;
 
         b {
             display: block;
@@ -914,7 +914,7 @@ header {
         box-sizing: border-box;
         padding: 27px 17px 20px 103px;
         border-radius: 15px;
-        background: #ff83ba url(../../images/layout/bg-telBox02.png) no-repeat left 1px top 0;
+        background: $prim2 url(../../images/layout/bg-telBox02.png) no-repeat left 1px top 0;
         b {
             display: block;
             margin-bottom: 10px;
@@ -954,7 +954,7 @@ header {
                 text-align: left;
                 color: $w;
                 &::placeholder {
-                    color: rgba(255, 255, 255, 0.53);
+                    color: rgba($w, 0.53);
                 }
             }
             .btn_search {
@@ -1599,7 +1599,7 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 1500;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba($b, 0.7);
 
     #pop_pwCheck {
         overflow: hidden;
