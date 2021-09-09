@@ -318,25 +318,25 @@ body.typeEasy #header {
   margin: 0 auto;
 }
 
-.tab-wrap {
+.tab-wrap.tab-type1 {
   position: relative;
   height: 295px;
   padding-top: 4px;
 }
 
-.tab-wrap .successiveTab {
+.tab-wrap.tab-type1 .successiveTab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.tab-wrap .successiveTab > li {
+.tab-wrap.tab-type1 .successiveTab > li {
   padding: 0;
   border-top: none;
 }
 
-.tab-wrap .successiveTab > li > a {
+.tab-wrap.tab-type1 .successiveTab > li > a {
   display: inline-block;
   width: auto;
   height: 48px;
@@ -350,32 +350,32 @@ body.typeEasy #header {
   color: #888;
 }
 
-.tab-wrap .successiveTab > li.on a {
-  background-color: #476cf7;
+.tab-wrap.tab-type1 .successiveTab > li.on a {
+  background-color: #3367df;
   color: #fff;
 }
 
-.tab-wrap .successiveTab > li.on .tab-cont {
+.tab-wrap.tab-type1 .successiveTab > li.on .tab-cont {
   display: block;
 }
 
-.tab-wrap .tab-cont {
+.tab-wrap.tab-type1 .tab-cont {
   margin-top: 10px;
 }
 
-.tab-wrap .btn_more {
+.tab-wrap.tab-type1 .btn_more {
   position: absolute;
   right: 0;
   top: 12px;
   width: 30px;
   height: 30px;
-  background-color: #476cf7;
+  background-color: #3367df;
   font-size: 0;
   border-radius: 50%;
   text-align: center;
 }
 
-.tab-wrap .btn_more::before {
+.tab-wrap.tab-type1 .btn_more::before {
   content: "+";
   display: inline-block;
   font-size: 30px;
@@ -461,7 +461,6 @@ header .gnb_util button {
   overflow: hidden;
   height: 25px;
   margin-left: 20px;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
@@ -626,7 +625,6 @@ header .gnb_util .btn_topSearch {
   margin: 0;
   padding: 0;
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 100px;
@@ -677,7 +675,6 @@ header .gnb_util .btn_topSearch {
   display: block;
   margin-bottom: 20px;
   color: #00589e;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 32px;
@@ -687,7 +684,6 @@ header .gnb_util .btn_topSearch {
 #gnb .gnbTit > p {
   display: block;
   color: #999;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 19px;
@@ -746,7 +742,6 @@ header .gnb_util .btn_topSearch {
 #gnb .menuM > li > a {
   display: inline-block;
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
@@ -779,7 +774,6 @@ header .gnb_util .btn_topSearch {
 #gnb .menuS > li > a {
   display: block;
   color: #555;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -845,7 +839,6 @@ header .gnb_util .btn_topSearch {
   border: none;
   background: #fff;
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 35px;
@@ -926,7 +919,6 @@ header .gnb_util .btn_topSearch {
   padding: 0 55px 0 30px;
   background: url(../../images/layout/ico_dotArrB_black_s.png) no-repeat right 20px center;
   color: #666;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 50px;
@@ -986,7 +978,6 @@ header .gnb_util .btn_topSearch {
 
 #snb_nav #snb a {
   color: #666;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1058,7 +1049,6 @@ header .gnb_util .btn_topSearch {
   width: 150px;
   height: 51px;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 17px;
   font-weight: 300;
   line-height: 51px;
@@ -1513,7 +1503,6 @@ header .gnb_util .btn_topSearch {
   padding-right: 25px;
   background: url(../../images/layout/ico_arrT_white.png) no-repeat right center;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 55px;
@@ -1545,7 +1534,6 @@ footer .f_mark li .markImg {
 
 footer .f_mark li > span {
   color: #a1a7b0;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 17px;
@@ -1663,7 +1651,6 @@ footer .f_menu li:last-child::after {
 
 footer .f_menu li a {
   color: #a1a7b0;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 15px;
   text-decoration: none;
 }
@@ -1682,14 +1669,12 @@ footer address em {
   display: inline-block;
   margin-right: 15px;
   color: #abb1ba;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 14px;
   vertical-align: top;
 }
 
 footer .copyright {
   color: #abb1ba;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 13px;
 }
 
@@ -1730,7 +1715,6 @@ footer .copyright {
   position: relative;
   padding-bottom: 3px;
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -1751,7 +1735,6 @@ footer .copyright {
 #pnuh_network > section .network_list > ul > li > a {
   display: block;
   color: #555;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 17px;
@@ -2006,7 +1989,6 @@ footer .copyright {
   width: 530px;
   margin-left: 30px;
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 52px;
   font-weight: 700;
   line-height: 62px;
@@ -2020,7 +2002,6 @@ footer .copyright {
   width: 530px;
   margin: 30px 0 0 30px;
   color: #555;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 27px;
@@ -2176,7 +2157,7 @@ footer .copyright {
   font-size: 72px;
   font-weight: 900;
   line-height: 1;
-  color: #3968e5;
+  color: #3367df;
 }
 
 .mNews .mTit_txt {
@@ -2193,7 +2174,7 @@ footer .copyright {
   top: 175px;
   width: 111px;
   height: 42px;
-  background-color: #3968e5;
+  background-color: #3367df;
   font-size: 16px;
   color: #fff;
   text-align: center;
@@ -2451,7 +2432,6 @@ footer .copyright {
   overflow: hidden;
   margin: 0 20px 10px;
   color: #00589e;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2859,6 +2839,73 @@ footer .copyright {
   width: calc(100% - 675px);
 }
 
+.mNotice .tab-wrap {
+  position: relative;
+  height: 295px;
+  padding-top: 4px;
+}
+
+.mNotice .tab-wrap .successiveTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.mNotice .tab-wrap .successiveTab > li {
+  padding: 0;
+  border-top: none;
+}
+
+.mNotice .tab-wrap .successiveTab > li > a {
+  display: inline-block;
+  width: auto;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 23px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #888;
+  cursor: pointer;
+  color: #888;
+}
+
+.mNotice .tab-wrap .successiveTab > li.on a {
+  background-color: #3367df;
+  color: #fff;
+}
+
+.mNotice .tab-wrap .successiveTab > li.on .tab-cont {
+  display: block;
+}
+
+.mNotice .tab-wrap .tab-cont {
+  margin-top: 10px;
+}
+
+.mNotice .tab-wrap .btn_more {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  background-color: #3367df;
+  font-size: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.mNotice .tab-wrap .btn_more::before {
+  content: "+";
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+  margin-top: -1px;
+}
+
 .mNotice li {
   overflow: hidden;
   padding: 18px 0;
@@ -2871,7 +2918,6 @@ footer .copyright {
   text-overflow: ellipsis;
   width: calc(100% - 90px);
   color: #000;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -2886,7 +2932,6 @@ footer .copyright {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #888;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -2938,7 +2983,6 @@ footer .copyright {
   display: block;
   margin-bottom: 20px;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 36px;
@@ -2949,7 +2993,6 @@ footer .copyright {
   display: block;
   margin-bottom: 6px;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
@@ -2966,7 +3009,6 @@ footer .copyright {
   border-top-left-radius: 9px;
   border-bottom-right-radius: 9px;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 35px;
@@ -3105,7 +3147,7 @@ footer .copyright {
 
 .mIcoBnr2 .lst_mico_type1 li:first-child {
   width: 500px;
-  background-color: #00b5f1;
+  background-color: #08b5f4;
 }
 
 .mIcoBnr2 .lst_mico_type1 li:first-child a {
@@ -3157,7 +3199,6 @@ footer .copyright {
 #easyService {
   position: relative;
   width: 100%;
-  background-color: #0cb5f4;
   background: url(../../images/main/bg_easy_wrap.gif) 50% 0 repeat-y;
   z-index: 1100;
 }
@@ -3491,7 +3532,7 @@ footer .copyright {
 
 .easy_ct .tel a {
   display: block;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: normal;
@@ -3856,7 +3897,6 @@ footer .copyright {
   padding-left: 17px;
   background: url(../../images/main/headerBnr_check.png) no-repeat left top;
   color: #fff;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 15px;

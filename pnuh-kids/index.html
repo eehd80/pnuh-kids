@@ -262,7 +262,7 @@ body 클래스 규칙 :
                 <nav>
                     <ul id="gnb">
                         <li class="child">
-                            <a href="#none">병원안내</a>
+                            <a href="chart-intro.html">병원안내</a>
                             <div class="gnbTit">
                                 <h2>병원안내</h2>
                                 <p>부산대학교어린이병원의 각종 <br />소식들을 자세히 소개합니다.</p>
@@ -495,23 +495,10 @@ body 클래스 규칙 :
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    // autoplay: true,
+                    autoplay: true,
                     autoplaySpeed: 2400,
                 });
                 function mVisual() {
-                    if (window.matchMedia("(max-width:1618px)").matches) {
-                        $(".mVisual .list").css({
-                            width: Math.floor($("#header nav").width() + (window.innerWidth - 1280) / 2 - 17),
-                        });
-                    }
-                    if (window.matchMedia("(min-width:1619px)").matches) {
-                        $(".mVisual .list").css({
-                            width: "",
-                        });
-                    }
-                    $(".mVisual .list .slick-next").css({
-                        "margin-left": $(".mVisual .list .slick-dots").width() + 70,
-                    });
                     if ($(".mVisual .list .slick-dots li").length > 1) {
                         $(".mVisual .list_control").css({
                             left: $(".mVisual .list .slick-dots").offset().left + $(".mVisual .list .slick-dots").width() + 5,
@@ -804,7 +791,7 @@ body 클래스 규칙 :
 
             <div class="mBtm">
                 <div class="container">
-                    <div class="mNotice tab-wrap">
+                    <div class="mNotice tab-wrap tab-type1">
                         <ul class="tabTypeB successiveTab">
                             <li id="tab1" rel="tabContent1" class="on">
                                 <a href="#">공지사항</a>
