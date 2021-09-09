@@ -452,6 +452,7 @@ header .gnb_util {
   position: absolute;
   right: 30px;
   top: 40px;
+  z-index: 110;
 }
 
 header .gnb_util a,
