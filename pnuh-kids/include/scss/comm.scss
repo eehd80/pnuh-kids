@@ -317,25 +317,15 @@ header {
         padding: 0 15px;
         font-size: 0;
         vertical-align: top;
+        &:hover,
+        &.on {
+            a {
+                color: #00589e;
 
-        &:first-child {
-            .menuM {
-                height: 342px;
-            }
-        }
-        &:nth-child(2) {
-            .menuM {
-                height: 330px;
-            }
-        }
-        &:nth-child(4) {
-            .menuM {
-                height: 330px;
-            }
-        }
-        &:last-child {
-            .menuM {
-                height: 270px;
+                &::before {
+                    left: 0;
+                    width: 100%;
+                }
             }
         }
 
@@ -346,6 +336,7 @@ header {
             margin: 0;
             padding: 0;
             color: $b;
+            font-family: "Roboto", "Noto Sans KR", sans-serif;
             font-size: 20px;
             font-weight: 500;
             line-height: 100px;
@@ -365,15 +356,6 @@ header {
                 background: #00589e;
                 transition: 0.2s;
                 font-size: 0;
-            }
-
-            &:hover {
-                color: #00589e;
-
-                &::before {
-                    left: 0;
-                    width: 100%;
-                }
             }
         }
     }

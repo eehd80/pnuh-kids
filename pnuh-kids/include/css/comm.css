@@ -602,20 +602,13 @@ header .gnb_util .btn_topSearch {
   vertical-align: top;
 }
 
-#gnb > li:first-child .menuM {
-  height: 342px;
+#gnb > li:hover a, #gnb > li.on a {
+  color: #00589e;
 }
 
-#gnb > li:nth-child(2) .menuM {
-  height: 330px;
-}
-
-#gnb > li:nth-child(4) .menuM {
-  height: 330px;
-}
-
-#gnb > li:last-child .menuM {
-  height: 270px;
+#gnb > li:hover a::before, #gnb > li.on a::before {
+  left: 0;
+  width: 100%;
 }
 
 #gnb > li > a {
@@ -625,6 +618,7 @@ header .gnb_util .btn_topSearch {
   margin: 0;
   padding: 0;
   color: #000;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 100px;
@@ -646,15 +640,6 @@ header .gnb_util .btn_topSearch {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 0;
-}
-
-#gnb > li > a:hover {
-  color: #00589e;
-}
-
-#gnb > li > a:hover::before {
-  left: 0;
-  width: 100%;
 }
 
 #gnb .gnbTit {
