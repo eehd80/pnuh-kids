@@ -36,7 +36,9 @@
         <script src="./include/vender/slick/slick.min.js"></script>
         <script src="./include/vender/jquery.easing.1.3.js"></script>
         <script src="./include/vender/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- reN_layout.js를 수정하면 ie에서 오류 납니다. 수정하지 마세요. -->
         <script src="./include/js/reN_layout.js"></script>
+        <script src="./include/js/comm.js"></script>
         <!--[if lt IE 9]>
             <script src="./include/vender/html5shiv.js"></script>
         <![endif]-->
@@ -882,20 +884,6 @@ body 클래스 규칙 :
                             </div>
                         </div>
                     </div>
-
-                    <script>
-                        $(document).on("click", "li[id^=tab]", function () {
-                            var varObj = $(this);
-                            var varObjRel = varObj.attr("rel");
-                            $("li[id^=tab]").each(function () {
-                                $(this).removeClass("on");
-                                $("#" + $(this).attr("rel")).hide();
-                            });
-                            varObj.addClass("on");
-                            $("#" + varObjRel).show();
-                            return false;
-                        });
-                    </script>
 
                     <div class="mBtmBnr">
                         <div class="list">
