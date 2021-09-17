@@ -14,6 +14,12 @@ body {
     overflow-y: auto;
     width: 100%;
     min-width: 1200px;
+    &.typeHeaderBnr {
+        #header {
+            position: absolute;
+            top: 90px;
+        }
+    }
     &.typeEasy {
         &.fixed #header {
             position: fixed;
@@ -21,7 +27,13 @@ body {
         }
         #header {
             position: absolute;
-            top: 780px;
+            top: 840px;
+        }
+        .headerBnr {
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
         }
     }
 }
@@ -1638,4 +1650,713 @@ footer {
     }
 }
 
-@import "main", "contents";
+// main 상단서비스
+#easyService {
+    // overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: url(../../images/main/bg_easy_wrap.gif) 50% 0 repeat-y;
+    z-index: 1100;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1100;
+        height: 27px;
+        background: url(../../images/main/bg-wave-white.png) 0 0 repeat-x;
+    }
+
+    .easyServiceWrap {
+        display: flex;
+        position: relative;
+        max-width: 1280px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transition: 0.2s;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            right: -216px;
+            z-index: 1200;
+            width: 177px;
+            height: 192px;
+            background: url(../../images/main/img-cute1.png) 0 0 no-repeat;
+        }
+    }
+
+    .easy_tit {
+        display: block;
+        margin-bottom: 20px;
+        color: $w;
+
+        font-size: 47px;
+        font-weight: 500;
+        line-height: 65px;
+        letter-spacing: -3px;
+    }
+
+    .easy_txt {
+        display: block;
+        margin-bottom: 60px;
+        color: $w;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.easy_appointment {
+    position: relative;
+    z-index: 1000;
+    width: 30%;
+    height: 840px;
+    padding-top: 82px;
+    box-sizing: border-box;
+    background-color: #0cb5f4;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 28px;
+        right: 45px;
+        width: 528px;
+        height: 413px;
+        background: url(../../images/main/bg-easy1.png) 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    .easyGrp {
+        width: 410px;
+
+        + .easyGrp {
+            margin-top: 50px;
+            padding-top: 45px;
+            border-top: 1px solid rgba($w, 0.3);
+        }
+    }
+
+    fieldset {
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+        margin-bottom: 35px;
+        padding-right: 110px;
+
+        .inp_t {
+            box-sizing: border-box;
+            height: 45px;
+            padding: 0 15px;
+            border: 1px solid $w;
+            background: rgba($b, 0);
+            color: $w;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: -1px;
+            text-align: left;
+        }
+
+        > input {
+            &::-webkit-input-placeholder,
+            &::-ms-input-placeholder,
+            &::-moz-placeholder {
+                color: $w;
+            }
+
+            &::-o-placeholder {
+                color: $w;
+            }
+        }
+
+        .btn_appointment {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 120px;
+            height: 45px;
+            box-sizing: border-box;
+            border-top-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+            background: $w;
+            color: $b;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 43px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+    }
+
+    ul.btn {
+        overflow: hidden;
+        li {
+            float: left;
+            margin-right: 29px;
+            padding-right: 28px;
+            border-right: 1px solid rgba($w, 0.3);
+
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            height: 105px;
+            box-sizing: border-box;
+            background: url(../../images/common/ico_lineArrR_white.png) no-repeat left bottom;
+            color: $w;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 39px;
+            letter-spacing: -1px;
+            text-decoration: none;
+        }
+    }
+}
+
+.easy_search {
+    position: relative;
+    z-index: 1000;
+    // width: 47%;
+    width: 42%;
+    height: 840px;
+    box-sizing: border-box;
+    background: url(../../images/main/bg-easy3.png) 0 100% no-repeat;
+    background-size: cover;
+
+    .area_search {
+        width: 545px;
+        height: 516px;
+        padding: 82px 0 0 78px;
+        background: url(../../images/main/bg-easy2.png) 100% 100% no-repeat;
+    }
+
+    .form_doctorsearch {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 52px;
+        margin-bottom: 28px;
+        border-bottom: 3px solid $w;
+
+        fieldset {
+            display: flex;
+        }
+
+        .inp_t {
+            width: 270px;
+            height: 45px;
+            padding: 0;
+            border: none;
+            background: none;
+            color: $w;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 45px;
+            letter-spacing: -1px;
+            text-align: left;
+            &::placeholder {
+                color: $w;
+            }
+        }
+
+        .btn_search {
+            display: block;
+            position: relative;
+            transform: scaleX(-1);
+            &::after {
+                content: "\f002";
+                font-family: "Line Awesome Free";
+                font-weight: 900;
+                font-size: 32px;
+                color: $w;
+            }
+        }
+    }
+    .link_gotodoc {
+        display: block;
+        width: 300px;
+        height: 43px;
+        border: 1px solid $w;
+        border-radius: 10px 0;
+        text-align: center;
+        color: $w;
+        font-size: 16px;
+        line-height: 43px;
+    }
+    .icoBnr {
+        width: 300px;
+        margin: 3px 0 0 80px;
+        a {
+            position: relative;
+            display: block;
+            padding: 24px 0;
+            color: $w;
+            &::after {
+                content: "";
+                @include posY;
+                right: 10px;
+                width: 35px;
+                height: 37px;
+                background-image: url(../../images/common/comm.png);
+                background-repeat: no-repeat;
+            }
+            &.link_depart::after {
+                width: 35px;
+                background-position: 0 -60px;
+            }
+            &.link_center::after {
+                width: 32px;
+                background-position: -40px -60px;
+            }
+            &.link_clinic::after {
+                right: 5px;
+                width: 44px;
+                background-position: -80px -60px;
+            }
+        }
+        strong {
+            font-size: 19px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+}
+
+.easy_ct {
+    position: relative;
+    z-index: 1000;
+    width: 23%;
+    box-sizing: border-box;
+    padding: 85px 0 0 70px;
+    background: #e6e8f0;
+
+    .tel {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -2px;
+
+        a {
+            display: block;
+            font-family: "Roboto", sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: normal;
+        }
+    }
+
+    .icoBnr {
+        overflow: hidden;
+        margin: 24px -30px 0 -20px;
+        padding-top: 34px;
+        border-top: 1px solid #c8cad1;
+
+        li {
+            float: left;
+            width: 50%;
+            margin-bottom: 27px;
+            font-size: 0;
+            text-align: center;
+
+            a {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                color: #1d2129;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 60px;
+                    margin: 0 auto 3px;
+                    background-image: url(../../images/common/comm.png);
+                    background-repeat: no-repeat;
+                }
+                &.link-map::before {
+                    width: 58px;
+                    background-position: 0 0;
+                }
+                &.link-emclinic::before {
+                    width: 66px;
+                    background-position: -60px 0;
+                }
+                &.link-parking::before {
+                    width: 62px;
+                    background-position: -140px 0;
+                }
+                &.link-hospital::before {
+                    width: 60px;
+                    background-position: -220px 0;
+                }
+            }
+        }
+    }
+
+    .imgBnr {
+        position: relative;
+        overflow: hidden;
+        margin: 10px auto 0;
+        padding-top: 31px;
+        border-top: 1px solid #c8cad1;
+        .list {
+            overflow: hidden;
+            a {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 247px;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-position: right center;
+                text-decoration: none;
+            }
+            .tit {
+                display: block;
+                margin-bottom: 15px;
+                font-size: 28px;
+                font-weight: 300;
+                letter-spacing: -1px;
+                line-height: 1.4;
+                em {
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+            .txt {
+                display: block;
+                color: #333;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -1px;
+            }
+            .img-bnr {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .slick-dots {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            left: 50px;
+            bottom: 0;
+            height: 9px;
+            font-size: 0;
+            text-align: left;
+
+            li {
+                display: inline-block;
+                height: 9px;
+                margin-right: 9px;
+                vertical-align: top;
+
+                button {
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    width: 9px;
+                    height: 9px;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    background: #bbbcc1;
+                    text-indent: -999px;
+                }
+
+                &.slick-active button {
+                    background: #00589e;
+                }
+            }
+        }
+
+        .list_control {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            > button {
+                display: block;
+                overflow: hidden;
+                width: 9px;
+                height: 9px;
+                text-indent: -999px;
+            }
+
+            > .btn_play {
+                background: url(../../images/common/btn_play_gray.png) no-repeat center;
+            }
+
+            > .btn_pause {
+                background: url(../../images/common/btn_pause_gray.png) no-repeat center;
+            }
+        }
+    }
+}
+
+#easyService {
+    .btn_sideQuickService {
+        display: table;
+        position: absolute;
+        right: 0;
+        top: 225px;
+        width: 60px;
+        height: 268px;
+        box-sizing: border-box;
+        background: #08b5f4 url(../../images/common/ico_arrL_white.png) no-repeat center bottom 25px;
+        font-size: 0;
+        transition: 0.15s;
+        z-index: 1000;
+
+        &.on {
+            display: none;
+            right: -70px;
+        }
+
+        &:hover {
+            background-color: #00589e;
+        }
+
+        > span {
+            display: table-cell;
+            width: 60px;
+            height: 268px;
+            box-sizing: border-box;
+            padding: 30px 20px 60px;
+            color: $w;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -1px;
+            text-align: center;
+            vertical-align: top;
+        }
+    }
+
+    .easy_quick {
+        position: absolute;
+        right: -370px;
+        top: 0px;
+        width: 360px;
+        height: 797px;
+        box-sizing: border-box;
+        padding: 25px;
+        background-color: #1c293c;
+        box-shadow: -5px 0 20px -10px $b;
+        transition: 0.2s;
+        z-index: 1200;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: $w;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url(../../images/main/bg-wave-white.png) 0 100% repeat-x;
+        }
+        &.on {
+            right: 0;
+        }
+
+        .easy_quickWrap {
+            display: none;
+            position: relative;
+            width: 310px;
+            height: 710px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        &.on .easy_quickWrap {
+            display: block;
+        }
+
+        .btn_close {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            width: 15px;
+            height: 15px;
+            background: url(../../images/common/ico_closeX_white.png) no-repeat center;
+            text-indent: -999px;
+        }
+
+        &.on .btn_close {
+            display: block;
+        }
+
+        .icoBnr {
+            overflow: hidden;
+            padding-top: 15px;
+
+            li {
+                float: left;
+                overflow: hidden;
+                width: 50%;
+                height: 95px;
+                margin-top: 40px;
+                font-size: 0;
+                text-align: center;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+
+                a {
+                    display: inline-block;
+                    min-width: 41px;
+                    padding-top: 55px;
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    color: $w;
+
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: -1px;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*** 상단 메인띠배너 ***/
+.headerBnr {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background: #04315e;
+    z-index: 10000;
+
+    .bnrWrap {
+        position: relative;
+        width: 1413px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 75px;
+        text-align: center;
+        transition: 0.2s;
+
+        a > img {
+            max-width: 845px !important;
+        }
+    }
+
+    .todayLimit {
+        position: absolute;
+        right: 75px;
+        top: 50%;
+        margin-top: -8px;
+
+        > {
+            input[type="checkbox"] {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 13px;
+                height: 13px;
+                z-index: 0;
+            }
+
+            label {
+                display: block;
+                position: relative;
+                padding-left: 17px;
+                background: url(../../images/main/headerBnr_check.png) no-repeat left top;
+                color: $w;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: -1px;
+                z-index: 1;
+            }
+
+            input[type="checkbox"]:checked + label {
+                background: url(../../images/main/headerBnr_checkOn.png) no-repeat left top;
+            }
+        }
+    }
+
+    .btn_close {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        overflow: hidden;
+        width: 27px;
+        height: 27px;
+        margin-top: -14px;
+        background: url(../../images/main/headerBnr_close.png) no-repeat center;
+        text-indent: -999px;
+    }
+}
+
+.typeEasy .headerBnr {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 10px 20px -10px rgba($b, 0.5);
+}
+
+@media all and (max-width: 1413px) {
+    .headerBnr {
+        .bnrWrap {
+            width: 1188px;
+            padding: 0 60px 0 0;
+        }
+
+        .todayLimit {
+            right: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #easyService,
+    .mNews,
+    .mHealth {
+        overflow: hidden;
+    }
+    .easy_ct {
+        padding-left: 40px;
+    }
+    #contents #rnb_nav {
+        width: calc(100% - 970px);
+        min-width: 260px;
+        max-width: 300px;
+    }
+}
+
+@import "reN_main", "reN_contents";
