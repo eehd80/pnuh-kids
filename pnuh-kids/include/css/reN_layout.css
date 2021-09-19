@@ -187,7 +187,7 @@ input[type="password"] {
   line-height: 28px;
   text-align: center;
   text-decoration: underline;
-  z-index: 10000;
+  z-index: 11000;
 }
 
 #skip_menu > a:active, #skip_menu > a:focus {
@@ -622,6 +622,19 @@ header .gnb_util .btn_topSearch {
 #gnb > li:hover a::before, #gnb > li.on a::before {
   left: 0;
   width: 100%;
+}
+
+#gnb > li:first-child .menuM,
+#gnb > li:nth-child(2) .menuM {
+  height: 340px;
+}
+
+#gnb > li:nth-child(4) .menuM {
+  height: 300px;
+}
+
+#gnb > li:nth-child(6) .menuM {
+  height: 250px;
 }
 
 #gnb > li > a {
@@ -2492,10 +2505,10 @@ footer .copyright {
   right: -370px;
   top: 0px;
   width: 360px;
-  height: 797px;
+  height: 860px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 25px;
+  padding: 100px 25px 25px;
   background-color: #1c293c;
   -webkit-box-shadow: -5px 0 20px -10px #000;
           box-shadow: -5px 0 20px -10px #000;

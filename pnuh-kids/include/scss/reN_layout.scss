@@ -341,6 +341,18 @@ header {
             }
         }
 
+        &:first-child .menuM,
+        &:nth-child(2) .menuM {
+            height: 340px;
+        }
+
+        &:nth-child(4) .menuM {
+            height: 300px;
+        }
+        &:nth-child(6) .menuM {
+            height: 250px;
+        }
+
         > a {
             display: block;
             position: relative;
@@ -2155,9 +2167,9 @@ footer {
         right: -370px;
         top: 0px;
         width: 360px;
-        height: 797px;
+        height: 860px;
         box-sizing: border-box;
-        padding: 25px;
+        padding: 100px 25px 25px;
         background-color: #1c293c;
         box-shadow: -5px 0 20px -10px $b;
         transition: 0.2s;
