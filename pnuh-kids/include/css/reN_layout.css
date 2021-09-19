@@ -2007,7 +2007,7 @@ footer .copyright {
 
 #easyService .easy_txt {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: #fff;
   font-size: 18px;
   font-weight: 300;
@@ -2017,7 +2017,7 @@ footer .copyright {
   position: relative;
   z-index: 1000;
   width: 30%;
-  height: 840px;
+  height: 812px;
   padding-top: 82px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2030,8 +2030,8 @@ footer .copyright {
   position: absolute;
   bottom: 28px;
   right: 45px;
-  width: 528px;
-  height: 413px;
+  width: 508px;
+  height: 393px;
   background: url(../../images/main/bg-easy1.png) 0 0 no-repeat;
   background-size: contain;
 }
@@ -2133,7 +2133,7 @@ footer .copyright {
   position: relative;
   z-index: 1000;
   width: 42%;
-  height: 840px;
+  height: 812px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url(../../images/main/bg-easy3.png) 0 100% no-repeat;
@@ -2142,7 +2142,7 @@ footer .copyright {
 
 .easy_search .area_search {
   width: 545px;
-  height: 516px;
+  height: 486px;
   padding: 82px 0 0 78px;
   background: url(../../images/main/bg-easy2.png) 100% 100% no-repeat;
 }
@@ -2609,6 +2609,7 @@ footer .copyright {
 .headerBnr {
   position: relative;
   width: 100%;
+  min-width: 1200px;
   height: 90px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
